@@ -18,6 +18,7 @@ public class DerivedRootSecrets {
     byte[][] keys = ByteUtil.split(okm, 32, 32);
     this.rootKey  = keys[0];
     this.chainKey = keys[1];
+
   }
 
   public byte[] getRootKey() {
